@@ -22,6 +22,17 @@ import javax.media.opengl.glu.GLU;
 
 public class BouncedBall2 extends AnimListener implements GLEventListener, KeyListener {
   
+    int r = 100;
+    int angle;
+    int posy;
+    double rotateAngle;
+    int direction = 0;
+    int animationIndex = 0;
+    int maxWidth = 100;
+    int maxHeight = 100;
+    int x = maxWidth / 2, y = maxHeight / 2;
+  
+  
   public void init(GLAutoDrawable drawable) {
         GL gl = drawable.getGL();
         gl.glEnable(GL.GL_TEXTURE_2D);  // Enable Texture Mapping
@@ -58,6 +69,8 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         gl.glOrtho(0.0, 1000.0, 0.0, 1000.0, -1.0, 1.0);
 
     }
+  
+  
    public void display(GLAutoDrawable drawable) {
 
         GL gl = drawable.getGL();
@@ -69,6 +82,7 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         animationIndex = animationIndex % 32;
        gl.glEnd();
    }
+  
   
   
    public void handleKeyPress() {

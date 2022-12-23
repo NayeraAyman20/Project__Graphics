@@ -1,3 +1,24 @@
+package Textures.Example1;
+
+import java.io.File;
+import javax.sound.sampled.*;
+import Textures.AnimListener;
+import Textures.TextureReader;
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.io.IOException;
+import java.util.BitSet;
+import javax.media.opengl.GL;
+import javax.media.opengl.GLAutoDrawable;
+import javax.media.opengl.GLCanvas;
+import javax.media.opengl.GLEventListener;
+import javax.media.opengl.glu.GLU;
+
 
 public class BouncedBall2 extends AnimListener implements GLEventListener, KeyListener {
   

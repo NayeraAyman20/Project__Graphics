@@ -1,3 +1,28 @@
+package Textures.Example1;
+
+import Textures.TextureReader;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.io.IOException;
+import javax.media.opengl.GL;
+import javax.media.opengl.GLAutoDrawable;
+import javax.media.opengl.glu.GLU;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+
+
+import Textures.AnimListener;
+import Textures.TextureReader;
+import java.awt.event.*;
+import java.io.IOException;
+import javax.media.opengl.*;
+
+import java.util.BitSet;
+import javax.media.opengl.glu.GLU;
+
 public class HomePage extends JFrame  {
   JButton B1,B2;
   

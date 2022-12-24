@@ -32,6 +32,21 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
     int maxHeight = 100;
     int x = maxWidth / 2, y = maxHeight / 2;
   
+   String textureNames[] = {"jkjk1.png", "jkjk2.png", "jkjk3.png", "jkjk4.png",
+        "jkjk5.png", "jkjk6.png", "jkjk7.png", "jkjk8.png",
+        "jkjk9.png", "jkjk10.png", "jkjk11.png", "jkjk12.png",
+        "jkjk13.png", "jkjk14.png", "jkjk15.png", "jkjk16.png",
+        "jkjk17.png", "jkjk18.png", "jkjk19.png", "jkjk20.png",
+        "jkjk21.png", "jkjk22.png", "jkjk23.png", "jkjk24.png",
+        "jkjk25.png", "jkjk26.png", "jkjk27.png", "jkjk28.png",
+        "jkjk29.png", "jkjk30.png", "jkjk31.png", "jkjk32.png",
+        "flcustom.png", "images (95).png"};
+
+    TextureReader.Texture texture[] = new TextureReader.Texture[textureNames.length];
+    int textures[] = new int[textureNames.length];
+    Object event;
+
+  
   
   public void init(GLAutoDrawable drawable) {
         GL gl = drawable.getGL();
@@ -80,6 +95,49 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         DrawBackground(gl);
         handleKeyPress();
         animationIndex = animationIndex % 32;
+     
+        DrawSprite(gl, x - 40, y + 30, animationIndex, 1, direction);
+        DrawSprite(gl, x - 30, y + 30, animationIndex, 1, direction);
+        DrawSprite(gl, x - 20, y + 30, animationIndex, 1, direction);
+        DrawSprite(gl, x - 10, y + 30, animationIndex, 1, direction);
+
+        DrawSprite(gl, x, y + 30, animationIndex, 1, direction);
+        DrawSprite(gl, x + 10, y + 30, animationIndex, 1, direction);
+        DrawSprite(gl, x + 20, y + 30, animationIndex, 1, direction);
+        DrawSprite(gl, x + 30, y + 30, animationIndex, 1, direction);
+
+        DrawSprite(gl, x - 40, y + 20, animationIndex, 1, direction);
+        DrawSprite(gl, x - 30, y + 20, animationIndex, 1, direction);
+        DrawSprite(gl, x - 20, y + 20, animationIndex, 1, direction);
+        DrawSprite(gl, x - 10, y + 20, animationIndex, 1, direction);
+
+        DrawSprite(gl, x, y + 20, animationIndex, 1, direction);
+        DrawSprite(gl, x + 10, y + 20, animationIndex, 1, direction);
+        DrawSprite(gl, x + 20, y + 20, animationIndex, 1, direction);
+        DrawSprite(gl, x + 30, y + 20, animationIndex, 1, direction);
+
+        DrawSprite(gl, x - 40, y + 10, animationIndex, 1, direction);
+        DrawSprite(gl, x - 30, y + 10, animationIndex, 1, direction);
+        DrawSprite(gl, x - 20, y + 10, animationIndex, 1, direction);
+        DrawSprite(gl, x - 10, y + 10, animationIndex, 1, direction);
+
+        DrawSprite(gl, x, y + 10, animationIndex, 1, direction);
+        DrawSprite(gl, x + 10, y + 10, animationIndex, 1, direction);
+        DrawSprite(gl, x + 20, y + 10, animationIndex, 1, direction);
+        DrawSprite(gl, x + 30, y + 10, animationIndex, 1, direction);
+
+        DrawSprite(gl, x - 40, y, animationIndex, 1, direction);
+        DrawSprite(gl, x - 30, y, animationIndex, 1, direction);
+        DrawSprite(gl, x - 20, y, animationIndex, 1, direction);
+        DrawSprite(gl, x - 10, y, animationIndex, 1, direction);
+
+        DrawSprite(gl, x, y, animationIndex, 1, direction);
+        DrawSprite(gl, x + 10, y, animationIndex, 1, direction);
+        DrawSprite(gl, x + 20, y, animationIndex, 1, direction);
+        DrawSprite(gl, x + 30, y, animationIndex, 1, direction);
+
+        DrawRoller(gl, x, y - 50, animationIndex, 1, direction);
+     
        gl.glEnd();
    }
   

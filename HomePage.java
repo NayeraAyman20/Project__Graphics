@@ -21,8 +21,9 @@ public class HomePage extends JFrame  {
      }
  });
         add(B1); 
-   
-   
+   B2=new JButton("How To Play");
+    
+   add(B2);
    
  } 
   

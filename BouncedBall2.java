@@ -240,18 +240,16 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
 
     @Override
     public void keyPressed(final KeyEvent event) {
-        int keyCode = event.getKeyCode();
-        keyBits.set(keyCode);
+       
     }
 
     @Override
     public void keyReleased(final KeyEvent event) {
-        int keyCode = event.getKeyCode();
-        keyBits.clear(keyCode);
+      
     }
 
     private boolean isKeyPressed(final int keyCode) {
-        return keyBits.get(keyCode);
+      
     }
 
 

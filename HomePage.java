@@ -10,10 +10,11 @@ import javax.swing.*;
 public class HomePage extends JFrame  {
   
  public HomePage(){
-  
+   JFrame f = new JFrame();
+   f.setSize(1100, 700);
  
   
-  
+ }
  public static void main(String[] args) {
         HomePage HP = new HomePage();
     } 

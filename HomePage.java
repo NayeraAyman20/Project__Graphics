@@ -39,6 +39,8 @@ public class HomePage extends JFrame  {
    
    B1.setBackground(java.awt.Color.GRAY);
    B1.setForeground(java.awt.Color.WHITE);
+   B2.setBackground(java.awt.Color.GRAY);
+   B2.setForeground(java.awt.Color.WHITE);
    
  }
  public static void main(String[] args) {

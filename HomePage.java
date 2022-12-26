@@ -12,6 +12,8 @@ public class HomePage extends JFrame  {
  public HomePage(){
    JFrame f = new JFrame();
    f.setSize(1100, 700);
+   f.setDefaultCloseOperation(EXIT_ON_CLOSE);
+   f.setLocationRelativeTo(null);
  
   
  }

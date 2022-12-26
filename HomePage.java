@@ -30,6 +30,8 @@ public class HomePage extends JFrame  {
    JButton B3 = new JButton("                      Level Up             ");
    JButton B4 = new JButton("                         Sound             ");
    
+   JPanel panel = new JPanel();
+   
  }
  public static void main(String[] args) {
         HomePage HP = new HomePage();

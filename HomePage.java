@@ -1,17 +1,9 @@
 package Textures.Example1;
 
-import Textures.TextureReader;
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.io.IOException;
-import javax.media.opengl.GL;
-import javax.media.opengl.GLAutoDrawable;
-import javax.media.opengl.glu.GLU;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import static javax.swing.JFrame.EXIT_ON_CLOSE;
+;
+import javax.swing.*;
 
 
 import Textures.AnimListener;

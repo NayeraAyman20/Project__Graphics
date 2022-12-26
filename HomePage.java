@@ -2,18 +2,10 @@ package Textures.Example1;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
-;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javafx.scene.paint.Color;
 import javax.swing.*;
-
-
-import Textures.AnimListener;
-import Textures.TextureReader;
-import java.awt.event.*;
-import java.io.IOException;
-import javax.media.opengl.*;
-
-import java.util.BitSet;
-import javax.media.opengl.glu.GLU;
 
 public class HomePage extends JFrame  {
   JButton B1,B2;

@@ -36,6 +36,10 @@ public class HomePage extends JFrame  {
    panel.add(B3);
    panel.add(B4);
    f.add(panel, BorderLayout.NORTH);
+   
+   B1.setBackground(java.awt.Color.GRAY);
+   B1.setForeground(java.awt.Color.WHITE);
+   
  }
  public static void main(String[] args) {
         HomePage HP = new HomePage();

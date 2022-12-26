@@ -36,7 +36,14 @@ public class HomePage extends JFrame  {
    panel.add(B3);
    panel.add(B4);
    f.add(panel, BorderLayout.NORTH);
-   
+   B1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent a) {
+                new USER_NAME();
+                
+                    
+            }
+        });
    B1.setBackground(java.awt.Color.GRAY);
    B1.setForeground(java.awt.Color.WHITE);
    B2.setBackground(java.awt.Color.GRAY);

@@ -31,6 +31,10 @@ public class HomePage extends JFrame  {
    JButton B4 = new JButton("                         Sound             ");
    
    JPanel panel = new JPanel();
+   panel.add(B1);
+   panel.add(B2);
+   panel.add(B3);
+   panel.add(B4);
    
  }
  public static void main(String[] args) {

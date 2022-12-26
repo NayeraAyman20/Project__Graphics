@@ -16,15 +16,19 @@ public class HomePage extends JFrame  {
    f.setLocationRelativeTo(null);
    
    ImageIcon icon = new ImageIcon("C:\\Users\\Administrator\\Desktop\\BackGround2.png");
-        JLabel label = new JLabel(icon);
-        label.setLayout(new FlowLayout(-300, 500, 0));
-        JScrollPane scrollpane = new JScrollPane(label);
-        scrollpane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollpane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-        f.add(scrollpane);
-        f.setVisible(true);
-        JViewport viewport = scrollpane.getViewport();
-   
+   JLabel label = new JLabel(icon);
+   label.setLayout(new FlowLayout(-300, 500, 0));
+   JScrollPane scrollpane = new JScrollPane(label);
+   scrollpane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+   scrollpane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+   f.add(scrollpane);
+   f.setVisible(true);
+   JViewport viewport = scrollpane.getViewport();
+  
+   JButton B1 = new JButton("                       start               ");
+   JButton B2 = new JButton("                     How to Play ?         ");
+   JButton B3 = new JButton("                      Level Up             ");
+   JButton B4 = new JButton("                         Sound             ");
    
  }
  public static void main(String[] args) {

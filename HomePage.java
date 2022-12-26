@@ -43,7 +43,23 @@ public class HomePage extends JFrame  {
                 
                     
             }
+        });B2.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent a) {
+                
+                new HowToPlay();
+                    
+            }
         });
+        
+        
+        B4.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent a) {
+                
+                new sound();
+                    
+            }
+        });
+   
    B1.setBackground(java.awt.Color.GRAY);
    B1.setForeground(java.awt.Color.WHITE);
    B2.setBackground(java.awt.Color.GRAY);

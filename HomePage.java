@@ -8,9 +8,6 @@ import javafx.scene.paint.Color;
 import javax.swing.*;
 
 public class HomePage extends JFrame  {
-  JButton B1,B2;
-  
-  
   
  public HomePage(){
   

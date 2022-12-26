@@ -35,7 +35,7 @@ public class HomePage extends JFrame  {
    panel.add(B2);
    panel.add(B3);
    panel.add(B4);
-   
+   f.add(panel, BorderLayout.NORTH);
  }
  public static void main(String[] args) {
         HomePage HP = new HomePage();

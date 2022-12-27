@@ -40,7 +40,7 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         "jkjk21.png", "jkjk22.png", "jkjk23.png", "jkjk24.png",
         "jkjk25.png", "jkjk26.png", "jkjk27.png", "jkjk28.png",
         "jkjk29.png", "jkjk30.png", "jkjk31.png", "jkjk32.png",
-        "flcustom.png", "images (95).png"};
+        "flcustom.png","bullet.png", "images (95).png"};
 
     TextureReader.Texture texture[] = new TextureReader.Texture[textureNames.length];
     int textures[] = new int[textureNames.length];
@@ -94,7 +94,7 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         gl.glLoadIdentity();
         DrawBackground(gl);
         handleKeyPress();
-        animationIndex = animationIndex % 32;
+        animationIndex = animationIndex % 35;
      
         DrawSprite(gl, x - 40, y + 30, animationIndex, 1, direction);
         DrawSprite(gl, x - 30, y + 30, animationIndex, 1, direction);
@@ -137,7 +137,7 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         DrawSprite(gl, x + 30, y, animationIndex, 1, direction);
 
         DrawRoller(gl, x, y - 50, animationIndex, 1, direction);
-     
+         Drawball(gl, x, y - 47, animationIndex, 1, direction);
        gl.glEnd();
    }
   
@@ -193,11 +193,37 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
 
         gl.glDisable(GL.GL_BLEND);
     }
+  public void Drawball(GL gl, int x, int y, int index, float scale, int dir) {
+        gl.glEnable(GL.GL_BLEND);
+        gl.glBindTexture(GL.GL_TEXTURE_2D, textures[33]);	// Turn Blending On
+        int angle = 0;
+
+        gl.glPushMatrix();
+        // gl.glTranslated(x , y , 0);
+        gl.glTranslated(x / (maxWidth / 2.0) - 0.9, y / (maxHeight / 2.0) - 0.9, 0);
+        gl.glScaled(0.055* scale, 0.055 * scale, 1);
+        gl.glRotated(angle, 0, 0, 1);
+        //System.out.println(x +" " + y);
+        gl.glBegin(GL.GL_QUADS);
+        // Front Face
+        gl.glTexCoord2f(0.0f, 0.0f);
+        gl.glVertex3f(-1.0f, -1.0f, -1.0f);
+        gl.glTexCoord2f(1.0f, 0.0f);
+        gl.glVertex3f(1.0f, -1.0f, -1.0f);
+        gl.glTexCoord2f(1.0f, 1.0f);
+        gl.glVertex3f(1.0f, 1.0f, -1.0f);
+        gl.glTexCoord2f(0.0f, 1.0f);
+        gl.glVertex3f(-1.0f, 1.0f, -1.0f);
+        gl.glEnd();
+        gl.glPopMatrix();
+
+        gl.glDisable(GL.GL_BLEND);
+    }
   
   public void DrawBackground(GL gl) {
 
         gl.glEnable(GL.GL_BLEND);
-        gl.glBindTexture(GL.GL_TEXTURE_2D, textures[33]);	// Turn Blending On
+        gl.glBindTexture(GL.GL_TEXTURE_2D, textures[34]);	// Turn Blending On
         // int angle = 0;
         gl.glPushMatrix();
         gl.glBegin(GL.GL_QUADS);

@@ -71,6 +71,9 @@ public class HomePage extends JFrame  {
  }
  public static void main(String[] args) {
         HomePage HP = new HomePage();
+   String filepath="Pixel-Peeker-Polka-faster.mp3";
+        playMusic(filepath);
+
     } 
   
 }

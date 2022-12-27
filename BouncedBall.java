@@ -27,7 +27,8 @@ public class BouncedBall extends JFrame {
  
   
   public static void main(String[] args) {
-     BouncedBall app= new BouncedBall();
+      HomePage HP = new HomePage();
+    // BouncedBall app= new BouncedBall();
       animator.start();
     // show what we've done
 /*    SwingUtilities.invokeLater (
@@ -41,7 +42,7 @@ public class BouncedBall extends JFrame {
    public BouncedBall() {
     //set the JFrame title
     super("Bounced Ball");
-
+     this.listener = new BouncedBall2();
     //kill the process when the JFrame is closed
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

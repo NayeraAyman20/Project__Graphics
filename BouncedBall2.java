@@ -21,10 +21,12 @@ import javax.media.opengl.glu.GLU;
 
 
 public class BouncedBall2 extends AnimListener implements GLEventListener, KeyListener {
-  
+    int Score = 0;
     int r = 100;
     int angle;
     int posy;
+    boolean moveup;
+    boolean movedown;
     double rotateAngle;
     int direction = 0;
     int animationIndex = 0;
@@ -201,7 +203,7 @@ public class BouncedBall2 extends AnimListener implements GLEventListener, KeyLi
         gl.glPushMatrix();
         // gl.glTranslated(x , y , 0);
         gl.glTranslated(x / (maxWidth / 2.0) - 0.9, y / (maxHeight / 2.0) - 0.9, 0);
-        gl.glScaled(0.055* scale, 0.055 * scale, 1);
+        gl.glScaled(0.055 * scale, 0.055 * scale, 1);
         gl.glRotated(angle, 0, 0, 1);
         //System.out.println(x +" " + y);
         gl.glBegin(GL.GL_QUADS);
